@@ -1,2 +1,0 @@
-# aleximong.github.io
-ForTuan
