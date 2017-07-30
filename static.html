@@ -1,0 +1,117 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+    <script src="assets/js/libs/highmaps.js"></script>
+    <script src="assets/js/libs/exporting.js"></script>
+    <style type="text/css">
+        .pages {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .toolbar {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 6px 10px 6px 10px;
+        }
+
+        #container {
+            height: 500px;
+            min-width: 310px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .loading {
+            margin-top: 10em;
+            text-align: center;
+            color: gray;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+        td{
+            height: 50px;
+        }
+        .label{
+            font-size: 18px;
+            font-weight: 700
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pages">
+        <div class="toolbar">
+            <div>
+                <a href="/index.html">Back</a>
+            </div>
+        </div>
+        <div class="page active">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label class="label">Fullname:</label>
+                        </td>
+                        <td>
+                            <input class="input" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label">Email:</label>
+                        </td>
+                        <td>
+                            <input class="input" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label">Did you visit Vietname?</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Yes
+                            <input type="radio" name="gender" value="female"> No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label">Where?</label>
+                        </td>
+                        <td>
+                            <select>
+                            <option value="">Mien Bac</option>
+                            <option>Mien Trung</option>
+                            <option>Mien Nam</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label">Feedback</label>
+                        </td>
+                        <td>
+                            <textarea rows="4" cols="50"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type "submit"> Submit </td></tr>
+            </table>
+             </form>
+        </div>
+    </div>
+    <script src="assets/js/data-vn.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
